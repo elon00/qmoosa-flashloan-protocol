@@ -1,0 +1,26 @@
+{
+  "name": "@qmoosa/flashloan-protocol",
+  "version": "1.0.0",
+  "description": "ERC-3156 Standard Flash Loan Protocol — Invariant Math, Multi-Asset Liquidity Pool & Fee Mechanics",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/protocol.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "flashloan",
+    "erc-3156",
+    "liquidity-pool",
+    "arbitrage",
+    "defi"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
