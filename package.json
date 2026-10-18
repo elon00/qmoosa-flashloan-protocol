@@ -8,6 +8,7 @@
   "scripts": {
     "build": "tsc",
     "test": "npm run build && node --test tests/protocol.test.mjs",
+    "test:forge": "cd contracts && forge test",
     "lint": "tsc --noEmit"
   },
   "devDependencies": {

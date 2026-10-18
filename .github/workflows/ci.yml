@@ -30,3 +30,12 @@ jobs:
 
       - name: Static Verification & Lint
         run: npm run lint
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Run Foundry Solidity Unit, Fuzz, and Invariant Tests
+        working-directory: contracts
+        run: forge test -vv
